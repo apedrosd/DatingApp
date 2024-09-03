@@ -1,0 +1,49 @@
+#Create Project in terminal commands:
+    - dotnet new sln
+    - dotnet new webapi -controllers -n API
+    - dotnet sln add API
+    - code . (open solution in Visual Studio Code)
+
+#Visual Studio Code Extensions:
+    - C# Dev Kit
+    - Material Icon Theme
+    - NuGet Package Manager
+    - NuGet Gallery
+    - SQLite
+
+#Run code:
+    - dotnet run
+    - dotnet watch
+
+#Nugets:
+    - Microsoft.EntityFrameworkCore.Design" Version="8.0.4"
+    - Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.4"
+
+#Terminal Installs:
+    - dotnet tool install --global dotnet-ef --version 8.0.4
+
+#Database commands:
+    - dotnet ef migrations add InitialCreate -o Data/Migrations
+    - dotnet ef database update
+
+#Git: 
+    - https://github.com/apedrosd/DatingApp.git
+
+    - Tutorial:
+        - dotnet new gitignore
+        - git branch -M main
+        - git remote add origin https://github.com/apedrosd/DatingApp.git
+
+    - …or create a new repository on the command line:
+        -   echo "# DatingApp" >> README.md
+            git init
+            git add README.md
+            git commit -m "first commit"
+            git branch -M main
+            git remote add origin https://github.com/apedrosd/DatingApp.git
+            git push -u origin main
+
+    - …or push an existing repository from the command line:
+        -   git remote add origin https://github.com/apedrosd/DatingApp.git
+            git branch -M main
+            git push -u origin main
