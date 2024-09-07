@@ -47,3 +47,27 @@
         -   git remote add origin https://github.com/apedrosd/DatingApp.git
             git branch -M main
             git push -u origin main
+
+#Node.js
+Version: node --version
+
+#Angular 
+Install: 
+    - npm install -g @angular/cli (last)
+    - npm install -g @angular/cli@17 (17)
+    - ng new client
+    - ng serve
+
+#Bootstrap
+npm install ngx-bootstrap@12 bootstrap font-awesome
+add manualy in client package.json file:
+"overrides": {
+    "ngx-bootstrap": {
+      "@angular/common": "$@angular/common",
+      "@angular/core": "$@angular/core",
+      "@angular/animations": "$@angular/animations",
+      "@angular/forms": "$@angular/forms"
+    }
+  }
+
+
